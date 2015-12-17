@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+
+confdir="${XDG_CONFIG_HOME-$HOME/.config}/PixivUtil2"
+mkdir -p "$confdir"
+cd "$confdir"
+
+exec python -mPixivUtil2 'main()'
